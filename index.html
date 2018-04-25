@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Let's Talk Form</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Let's talk</h1>
+            <p>Think you have what it takes? Show us.</p>
+        </header>
+            <form>
+                <div class="formSection">
+                    <div class="formHeadings">
+                        <h3>1. Personal information</h3>
+                    </div>
+                    <div class="formSection">
+                    <input  
+                            class="height"
+                            type="text" 
+                            name="full_name"
+                            placeholder="Full name*"
+                            required 
+                    />
+                    <input 
+                            class="height"
+                            type="text"
+                            name="phone"
+                            placeholder="Phone*"
+                            required
+                    /><br />
+                    <input 
+                            class="height"
+                            type="email"
+                            name="email"
+                            placeholder="Email*"
+                            required
+                    /><br />
+                    <input 
+                            class="height"
+                            type="email"
+                            name="ReEnterEmail"
+                            placeholder="Re-enter email*"
+                            required 
+                    /><br />
+                    <input 
+                            class="height"
+                            type="text" 
+                            name="address"
+                            placeholder="Address*"
+                            required
+                    /><br />
+                    <input  
+                             class="height"  
+                            class="split"
+                            type="text"
+                            name="city"
+                            placeholder="City*"
+                            required
+                    />
+                    <input  
+                            class="height"
+                            class="split"
+                            type="text"
+                            name="state"
+                            placeholder="State"
+                    />
+                    <input  
+                            class="height"
+                            class="split"
+                            type="text"
+                            name="country_region"
+                            placeholder="Country/Region*"
+                            required
+                    />
+                    <input
+                            class="height"
+                            class="split"
+                            type="text"
+                            name="zip_code"
+                            placeholder="Zip/Postal code"
+                    /><br />
+                    <input 
+                            class="height"
+                            type="text"
+                            name="howDidYouHearAboutUs"
+                            placeholder="How did you hear about us"
+                    />
+                    </div> 
+                </div>
+                <div class="formSection">
+                    <div class="formHeadings">
+                        <h3>2. Skills and location</h3>
+                    </div>
+                    <h5>Which is your primary design discipline?*</h5>
+                    <div id="radioButtons">
+                        <input 
+                                checked
+                                type="radio" 
+                                name="primaryDesign" 
+                                value="designResearch" 
+                                id="designResearch"
+                        /><label for="designResearch">Design Research</label>
+                        <input 
+                                type="radio" 
+                                name="primaryDesign" 
+                                value="designResearch" 
+                                id="visualDEsign"
+                        /><label for="visualDEsign">Visual Design</label>
+                        <input 
+                                type="radio" 
+                                name="primaryDesign" 
+                                value="UXdesign" 
+                                id="uxDesign"
+                        /><label for="uxDesign">UX Design</label>
+                        <input 
+                                type="radio" 
+                                name="primaryDesign" 
+                                value="frontEndDev"
+                                id="front_end"
+                        /><label for="front_end">Front-end Dev</label>
+                    </div>
+                    <div id="checkboxDiv">
+                        <div id="checkboxWrapper" class="formSection">
+                          <div style="width:100%">
+                            <h5>Do you have experience with any other discipline</h5>
+                            <input 
+                                    type="checkbox" 
+                                    name="visualDesign_check" 
+                                    value="visualDesign_check"  
+                                    id="visualDesign_check"  
+                            /><label for="visualDesign_check">Visual Design</label><br />
+                            <input 
+                                    type="checkbox" 
+                                    name="uxDesign_check" 
+                                    value="uxDesign_check"  
+                                    id="uxDesign_check"  
+                            /><label for="uxDesign_check">UX design</label><br />
+                            <input 
+                                    type="checkbox" 
+                                    name="front_end_check" 
+                                    value="front_end_check"  
+                                    id="front_end_check"  
+                            /><label for="front_end_check">Front-end Development</label><br />
+                        </div>
+                        <div id="sideCheckbox">
+                            <h5>Where are you interested in working?*</h5>
+                            <p>
+                                You must be legally authorized to work without visa
+                                sponsorship in the location you choose
+                            </p>
+                            <input
+                                    type="checkbox"
+                                    name="austinTexas"
+                                    value="austinTexas"
+                                    id="austin"
+                            /><label for="austin">Austin, Texas</label><br />
+                            <input
+                                    type="checkbox"
+                                    name="newYork"
+                                    value="newYork"
+                                    id="newYork"
+                            /><label for="newYork">New York, New York</label><br />
+                            <input
+                                    type="checkbox"
+                                    name="toronto"
+                                    value="toronto"
+                                    id="toronto"
+                            /><label for="toronto">Toronto, Canada</label><br />
+                            <input
+                                    type="checkbox"
+                                    name="shangai"
+                                    value="shangai"
+                                    id="shangai"
+                            /><label for="shangai">Shangai, China</label><br />
+                            <input
+                                    type="checkbox"
+                                    name="dublin"
+                                    value="dublin"
+                                    id="dublin"
+                            /><label for="dublin">Dublin, Irleand</label><br />
+                            <input
+                                    type="checkbox"
+                                    name="hursley"
+                                    value="hursley"
+                                    id="hursley"
+                            /><label for="hursley">Hursley, United Kingdom</label><br />
+                            <input
+                                    type="checkbox"
+                                    name="boeblingen"
+                                    value="boeblingen"
+                                    id="boeblingen"
+                            /><label for="boeblingen">Boeblingen, Germany</label><br />
+                            <input
+                                    type="checkbox"
+                                    name="else"
+                                    value="else"
+                                    id="else"
+                            /><label for="else">Somewhere else</label><br />
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div  class="formSection">
+                    <div class="formHeadings">
+                            <h3>3. Portfolio</h3>
+                    </div>
+                    <div>
+                        <h5>
+                            Prove you're next great designer by showing us
+                            who you are. What you've done. How you think.
+                            Tell us your story.
+                        </h5>
+                        <input 
+                                type="text"
+                                name="portfolioLink"
+                                placeholder="Portfolio link*"
+                                required
+                        /><br />
+                        <textarea 
+                                rows="5" cols="50"
+                                placeholder="Anything else(another link, availability, ect.)?"           
+                        ></textarea>
+
+                        
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

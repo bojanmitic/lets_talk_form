@@ -1,0 +1,122 @@
+*{
+    font-family: helvetica Neuve, sans-serif;
+}
+body{
+    background-color: #454E57;
+    color:white;
+}
+h1,h3, h5{
+    font-weight: 500;
+    color:#FBFFFF
+}
+header{
+    text-align: center;
+}
+#container{
+   display: block;
+   width:60%;
+   margin: auto;
+   box-sizing: border-box;
+}
+#checkboxWrapper{
+    display:flex;
+}
+#sideCheckbox{
+    margin-left: 50px;
+    
+}
+#radioButtons{
+    width:100%;
+    text-align:center;
+}
+.formHeadings{
+    border-bottom: 3px solid #0B5A7B;
+}
+.formSection{
+    margin-top:15px;
+}
+.split{
+    width:24.25%;
+}
+input{
+    border:none;
+    background-color: #454E57;
+    border-bottom: 1px solid #78818A;
+    outline: none;
+}
+.height{
+    height:40px
+}
+input[name=full_name]{
+    width:70%;
+}
+input[name=phone]{
+    width:28%;
+}
+input[name=email]{
+    width:70%;
+}
+input[name=ReEnterEmail]{
+    width:70%;
+}
+input[name=address]{
+    width:100%;
+    margin-top: 30px;
+}
+input[name=howDidYouHearAboutUs]{
+    width:100%;
+    margin-top: 30px;
+}
+#radioButtons label{
+    background-color: #48515A;
+    border: 1px solid #A5AAB0;
+    padding:15px;
+    cursor: pointer;
+}
+#radioButtons{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+input[type="radio"]{
+    display:none;
+}
+#radioButtons input:checked + label{
+    background-color: #0AA8E5;
+}
+input[type="checkbox"] {
+    visibility: hidden;
+}
+label {
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  border: 1px solid #A5AAB0;
+  content: "\00a0";
+  display: inline-block;
+
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+input[type="checkbox"]:checked + label:before {
+    background: #48515A;
+    color: #A5AAB0;;
+    content: "\2713";
+    text-align: center;
+    margin-right:3px;
+  }
+  input[name="portfolioLink"]{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  textarea{
+      width:100%;
+      background: #48515A;
+  }
+  input,textarea{
+      color:white;
+      outline:none;
+  }
